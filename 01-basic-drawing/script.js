@@ -1,9 +1,10 @@
-function setup(){
+var setup = function(){
 	// set up code goes here
-	createCanvas(650, 480);
+	var board = createCanvas(650, 480);
+	console.log(board);
 }
 
-function draw(){
+var draw = function(){
 	// background
 	background(255, 204, 0);
 
@@ -17,3 +18,8 @@ function draw(){
 	rect(150, 150, 85, 85);
 
 }
+
+	var styleCanvas = function(){
+		var boardEl = document.getElementById("defaultCanvas0");
+		boardEl.classList.add('container');
+	}
