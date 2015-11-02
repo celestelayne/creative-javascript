@@ -5,7 +5,7 @@ var setup = function(){
 };
 
 var draw = function(){
-	// strokeWeight(10);
+	strokeWeight(10);
 	stroke('rgb(164, 115, 109)');
 
 	// F0ur Lines, No Loop
@@ -16,21 +16,24 @@ var draw = function(){
 	// line(400, 100, 400, 300);
 
 	// Horizontal Loop
-	// for (var i = 0; i < 10; i++){
-	// 	line(200 + 20*i, 100, 200 + 20*i, 300);
-	// }
+	for (var i = 0; i < 10; i++){
+		line(200 + 20*i, 100, 200 + 20*i, 300);
+	}
 
 	// Vertical Loop
-	// for (var i = 0; i < 9; i++){
-	// 	line(180, 120 + 20*i, 400, 120 + 20*i);
-	// }
+	for (var i = 0; i < 9; i++){
+		line(180, 120 + 20*i, 400, 120 + 20*i);
+	}
 
 	// Looping Circles
-	for (var i = 50; i < width; i+=50) {
-		for (var j = 50; j < height; j+=50){
-			fill('rgb(241, 190, 184)')
-			strokeWeight(4);
-			ellipse(i, j, 20, 20);
-		}
-	}
+	// for (var i = 50; i < width; i+=50) {
+	// 	for (var j = 50; j < height; j+=50){
+	// 		fill('rgb(241, 190, 184)')
+	// 		strokeWeight(4);
+	// 		ellipse(i, j, 20, 20);
+	// 	}
+	// }
+
+	var boardEl = document.getElementById('defaultCanvas0');
+	boardEl.classList.add('container')
 };
